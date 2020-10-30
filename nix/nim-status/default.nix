@@ -11,7 +11,7 @@ in rec {
   srcRaw = pkgs.fetchgit {
     url = "https://github.com/status-im/nim-status";
     rev = "4e9876b8eec323abd7e14178cffe4781b89d240a";
-    sha256 = "1hwbwsbx6lc4jwkkyymvmkn0jyd7s0ycz0ivv6a4vbmrkzs1qhpb";
+    sha256 = "0n0p5awkl9736bdssj4gjbs51gap4b8wrk42556pspl9pd9al5cw";
     #sha256 = "1q3zgl38kl526sqwbxysg66zh872lhw9d50fc52qnpskpzqlwkr2";
     #leaveDotGit = true;
     #deepClone = true;
