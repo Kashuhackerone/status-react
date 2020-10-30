@@ -66,4 +66,6 @@ public class NimStatus {
   public native String migrateKeyStoreDir(String accountData, String password, String oldKeystoreDir, String multiaccountKeystoreDir);
   public native void startWallet();
   public native void stopWallet();
+  public native void startLocalNotifications();
+  public native void stopLocalNotifications();
 }

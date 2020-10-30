@@ -593,3 +593,11 @@ void Java_im_status_NimStatus_startWallet(JNIEnv* env, jobject thiz) {
 void Java_im_status_NimStatus_stopWallet(JNIEnv* env, jobject thiz) {
   stopWallet();
 }
+
+void Java_im_status_NimStatus_startLocalNotifications(JNIEnv* env, jobject thiz) {
+  startLocalNotifications();
+}
+
+void Java_im_status_NimStatus_stopLocalNotifications(JNIEnv* env, jobject thiz) {
+  stopLocalNotifications();
+}

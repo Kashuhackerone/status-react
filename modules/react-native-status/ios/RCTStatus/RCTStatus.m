@@ -778,14 +778,14 @@ RCT_EXPORT_METHOD(stopLocalNotifications) {
 #if DEBUG
     NSLog(@"StopLocalNotifications() method called");
 #endif
-StatusgoStopLocalNotifications();
+    stopLocalNotifications();
 }
 
 RCT_EXPORT_METHOD(startLocalNotifications) {
 #if DEBUG
     NSLog(@"StartLocalNotifications() method called");
 #endif
-StatusgoStartLocalNotifications();
+    startLocalNotifications();
 }
 
 

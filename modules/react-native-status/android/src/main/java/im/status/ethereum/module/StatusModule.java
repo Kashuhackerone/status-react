@@ -1159,13 +1159,13 @@ class StatusModule extends ReactContextBaseJavaModule implements LifecycleEventL
     @ReactMethod
     public void stopLocalNotifications() {
         Log.d(TAG, "stopLocalNotifications");
-        Statusgo.stopLocalNotifications();
+        nimStatus.stopLocalNotifications();
     }
 
     @ReactMethod
     public void startLocalNotifications() {
         Log.d(TAG, "startLocalNotifications");
-        Statusgo.startLocalNotifications();
+        nimStatus.startLocalNotifications();
     }
 
     @ReactMethod

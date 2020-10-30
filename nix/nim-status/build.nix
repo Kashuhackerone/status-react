@@ -74,7 +74,8 @@ let
     '';
   };
 
-  nimCShimOverride = ./c_shim.nim;
+  nim_statusOverride = ./nim_status.nim;
+  shimOverride = ./shim.nim;
   compilerFlags = if isAndroid then
     "--sysroot ${ANDROID_NDK_HOME}/sysroot -target ${androidTarget}${api} -fPIC -I ${pcre}/include"
     else if isIOS then
@@ -221,11 +222,13 @@ in stdenv.mkDerivation rec {
     echo 'switch("passL", "${linkerFlags}")' >> config.nims
     echo 'switch("cpu", "${nimCpu}")' >> config.nims
     echo 'switch("os", "${nimPlatform}")' >> config.nims
+    echo 'switch("define", "androidNDK")' >> config.nims
 
     ${createNimbleLink}
 
 
-    cp ${nimCShimOverride} src/nim_status/c/nim_status.nim
+    cp ${nim_statusOverride} src/nim_status/c/nim_status.nim
+    cp ${shimOverride} src/nim_status/c/lib/shim.nim
 
 
     patchShebangs .

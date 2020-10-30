@@ -289,7 +289,7 @@ android-devices: ##@other Invoke adb devices
 
 android-logcat: export TARGET := android-env
 android-logcat: ##@other Read status-react logs from Android phone using adb
-	adb logcat | grep -e RNBootstrap -e ReactNativeJS -e ReactNative -e StatusModule -e StatusNativeLogs -e 'F DEBUG   :' -e 'Go      :' -e 'GoLog   :' -e 'libc    :'
+	adb logcat | grep -e nim -e RNBootstrap -e ReactNativeJS -e ReactNative -e StatusModule -e StatusNativeLogs -e 'F DEBUG   :' -e 'Go      :' -e 'GoLog   :' -e 'libc    :'
 
 android-install: export TARGET := android-env
 android-install: export BUILD_TYPE ?= release

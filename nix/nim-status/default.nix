@@ -10,8 +10,9 @@ let
 in rec {
   srcRaw = pkgs.fetchgit {
     url = "https://github.com/status-im/nim-status";
-    rev = "03cac5fa6d7fbd45b16307dd22d461a48585c8a9";
-    sha256 = "1q3zgl38kl526sqwbxysg66zh872lhw9d50fc52qnpskpzqlwkr2";
+    rev = "4e9876b8eec323abd7e14178cffe4781b89d240a";
+    sha256 = "1hwbwsbx6lc4jwkkyymvmkn0jyd7s0ycz0ivv6a4vbmrkzs1qhpb";
+    #sha256 = "1q3zgl38kl526sqwbxysg66zh872lhw9d50fc52qnpskpzqlwkr2";
     #leaveDotGit = true;
     #deepClone = true;
     fetchSubmodules = true;
