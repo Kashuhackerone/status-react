@@ -222,7 +222,7 @@ in stdenv.mkDerivation rec {
     echo 'switch("passL", "${linkerFlags}")' >> config.nims
     echo 'switch("cpu", "${nimCpu}")' >> config.nims
     echo 'switch("os", "${nimPlatform}")' >> config.nims
-    echo 'switch("define", "androidNDK")' >> config.nims
+    #echo 'switch("define", "androidNDK")' >> config.nims
 
     ${createNimbleLink}
 
