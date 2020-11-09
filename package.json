@@ -7,7 +7,9 @@
     "app:compile:android": "shadow-cljs compile android",
     "app:watch": "shadow-cljs watch android",
     "app:packager": "react-native start --host 0.0.0.0 --port 8081",
-    "app:android": "react-native run-android"
+    "app:android": "react-native run-android",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",
@@ -25,7 +27,7 @@
     "bignumber.js": "git+https://github.com/status-im/bignumber.js.git#v4.0.2-status",
     "buffer": "^5.4.2",
     "chance": "^1.1.0",
-    "create-react-class": "^15.6.2",
+    "create-react-class": "^15.7.0",
     "emojilib": "^2.4.0",
     "eth-phishing-detect": "^1.1.13",
     "functional-red-black-tree": "^1.0.1",
@@ -64,7 +66,8 @@
     "react-native-touch-id": "^4.4.1",
     "react-native-webview": "git+https://github.com/status-im/react-native-webview.git#v10.9.2",
     "tdigest": "^0.1.1",
-    "web3-utils": "^1.2.1"
+    "web3-utils": "^1.2.1",
+    "snyk": "^1.424.4"
   },
   "devDependencies": {
     "@babel/generator": "7.0.0",
@@ -79,5 +82,6 @@
     "process": "0.11.10",
     "rn-snoopy": "git+https://github.com/status-im/rn-snoopy.git#v2.0.2-status",
     "shadow-cljs": "^2.10.14"
-  }
+  },
+  "snyk": true
 }
